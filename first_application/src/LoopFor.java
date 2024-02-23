@@ -2,7 +2,7 @@ package first_application.src;
 
 import java.util.Scanner;
 
-public class Loop {
+public class LoopFor {
     public static void main(String[] args) {
         Scanner leitura = new Scanner(System.in);
         double mediaAvaliacao = 0;
