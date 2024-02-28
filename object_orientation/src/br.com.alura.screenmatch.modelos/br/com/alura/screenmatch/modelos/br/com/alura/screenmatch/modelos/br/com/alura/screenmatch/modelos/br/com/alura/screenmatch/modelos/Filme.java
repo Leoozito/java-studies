@@ -1,10 +1,11 @@
-package src;
+package br.com.alura.screenmatch.modelos;
+
 public class Filme {
-    String nome;
-    double avaliacao;
-    int totalAvaliacoes;
-    int duracaoMinutos;
-    int anoLancamento;
+    private String nome;
+    private double avaliacao;
+    private int totalAvaliacoes; // privando de ser modificado em outras classes
+    private int duracaoMinutos;
+    private int anoLancamento;
 
     
     // criação de métodos
@@ -18,6 +19,10 @@ public class Filme {
     void avalia(double nota) {
         avaliacao += nota;
         totalAvaliacoes++;
+    }
+
+    int retornaTotalAvaliacoes() {
+        return totalAvaliacoes;
     }
 
     double mediaAvaliacoes() {

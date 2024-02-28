@@ -1,4 +1,4 @@
-package src;
+import br.com.alura.screenmatch.modelos.Filme;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,7 +16,7 @@ public class Main {
         meuFilme.avalia(10);
 
         System.out.println("Avaliação do Filme: " + meuFilme.avaliacao);
-        System.out.println("Total de Avaliações: " + meuFilme.totalAvaliacoes);
+        System.out.println("Total de Avaliações: " + meuFilme.retornaTotalAvaliacoes());
         
         System.out.println("Media avaliação: "+ meuFilme.mediaAvaliacoes());
     }
