@@ -4,9 +4,9 @@ public class Main {
     public static void main(String[] args) {
         // atribuindo valores às variaveis do meu objeto
         Filme meuFilme = new Filme();
-        meuFilme.nome = "Ilha do Medo";
-        meuFilme.anoLancamento = 2017;
-        meuFilme.duracaoMinutos = 180;
+        meuFilme.SetNome("Ilha do Medo");
+        meuFilme.SetAnoLancamento(2017);
+        meuFilme.SetDuracaoMinutos(180);
 
         // chamando funções do meu objeto
         meuFilme.exibeFichaTecnica();
@@ -15,7 +15,6 @@ public class Main {
         meuFilme.avalia(7.2);
         meuFilme.avalia(10);
 
-        System.out.println("Avaliação do Filme: " + meuFilme.avaliacao);
         System.out.println("Total de Avaliações: " + meuFilme.retornaTotalAvaliacoes());
         
         System.out.println("Media avaliação: "+ meuFilme.mediaAvaliacoes());

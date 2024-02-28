@@ -7,25 +7,40 @@ public class Filme {
     private int duracaoMinutos;
     private int anoLancamento;
 
-    
-    // criação de métodos
+    // como os valores estão privados, para utiliza-los em outras class, temos que settar:=
+    public void SetNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void SetAvaliacao(double avaliacao) {
+        this.avaliacao = avaliacao;
+    }
+
+    public void SetAnoLancamento(int anoLancamento) {
+        this.anoLancamento = anoLancamento;
+    }
+
+    public void SetDuracaoMinutos(int duracaoMinutos) {
+        this.duracaoMinutos = duracaoMinutos;
+    }
+
 
     // void quando não RETORNA NADA
-    void exibeFichaTecnica() {
+    public void exibeFichaTecnica() {
         System.out.println("Nome do filme: " + nome);
         System.out.println("Ano de lançamento: " + anoLancamento);
     }
 
-    void avalia(double nota) {
+    public void avalia(double nota) {
         avaliacao += nota;
         totalAvaliacoes++;
     }
 
-    int retornaTotalAvaliacoes() {
+    public int retornaTotalAvaliacoes() {
         return totalAvaliacoes;
     }
 
-    double mediaAvaliacoes() {
+    public double mediaAvaliacoes() {
         return avaliacao / totalAvaliacoes;
     }
 }
