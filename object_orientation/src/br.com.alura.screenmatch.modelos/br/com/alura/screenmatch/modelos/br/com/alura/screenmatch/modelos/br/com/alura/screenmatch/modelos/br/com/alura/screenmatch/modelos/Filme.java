@@ -7,7 +7,7 @@ public class Filme {
     private int duracaoMinutos;
     private int anoLancamento;
 
-    // como os valores estão privados, para utiliza-los em outras class, temos que settar:=
+    // como os valores estão privados, para utiliza-los em outras class, temos que settar:
     public void SetNome(String nome) {
         this.nome = nome;
     }
